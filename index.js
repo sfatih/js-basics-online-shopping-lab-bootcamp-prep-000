@@ -19,10 +19,16 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
-  let string = "In your cart"
-  for(let i=0; i < cart.length;i++){
-    string += `${cart[i].name}${cart[i].price}`
+  if(cart.length!==0){
+    let string = "In your cart"
+    for(let i=0; i < cart.length;i++){
+      string += `${cart[i].name}${cart[i].price}`
+    }
+  }else{
+    return "Your shopping cart is empty."
   }
+  
+
 }
 
 function total() {
