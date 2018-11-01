@@ -66,7 +66,7 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   // write your code here
-  let total = this.total();
+  let temp = total();
   if(cardNumber !== undefined ){
     cart.splice(0,cart.length);
     return `Your total cost is $${total}, which will be charged to the card ${cardNumber}.`
