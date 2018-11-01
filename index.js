@@ -59,10 +59,9 @@ function removeFromCart(item) {
     if(item == cart[i].itemName){
       cart.splice(i,1);
       return cart;
-    }else{
-      return "That item is not it your cart."
     }
   }
+  return "That item is not it your cart."
 }
 
 function placeOrder(cardNumber) {
