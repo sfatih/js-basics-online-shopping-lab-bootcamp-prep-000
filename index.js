@@ -23,7 +23,7 @@ function viewCart() {
     let string = "In your cart, you have ";
     
     if(cart.length == 1){
-      string += `${cart[0].itemName} at ${cart[0].itemPrice}.`;
+      string += `${cart[0].itemName} at $${cart[0].itemPrice}.`;
       return string;
     }
     
