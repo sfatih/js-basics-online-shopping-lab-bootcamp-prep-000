@@ -56,12 +56,21 @@ function total() {
 function removeFromCart(item) {
   // write your code here
   for(let i=0;i < cart.length; i++){
-    let total = 0;
-    total += cart[i].itemPrice;
-    return total;
+    if(item==cart[i].itemName){
+      cart.splice(i,1)
+      return cart;
+    }else{
+      return "That item is not it your cart."
+    }
   }
 }
 
 function placeOrder(cardNumber) {
   // write your code here
+  
+  if(cardNumber != undefined ){
+    
+  }else{
+    return "Sorry, we don't have a credit card on file for you."
+  }
 }
